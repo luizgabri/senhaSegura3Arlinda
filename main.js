@@ -30,3 +30,20 @@ function aumentaTamanho(){
     numeroSenha.textContent = tamanhoSenha;
     geraSenha();
 }
+
+function geraSenha(){
+    let alfabeto = '';
+    if (checbox[0].checked) {
+        alfabeto = alfabeto + letrasMaiusculas;
+    }
+    if (checbox[1].checked) {
+        alfabeto = alfabeto + letrasMinusculas;
+    }
+    if (checbox[2].checked) {
+        alfabeto = alfabeto + numeros;
+    }
+    if (checbox[3].checked) {
+        alfabeto = alfabeto + simbolos;
+    }
+
+
